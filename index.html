@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stoploss and max Profit calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="options-form">
+        <div class="section">
+
+            <div>
+                <label for="pe-sell-price">PE Sell Price:</label>
+                <input type="text" id="pe-sell-price" name="pe-sell-price">
+            </div>
+
+            <div>
+                <label for="pe-buy-price">PE Buy Price:</label>
+                <input type="text" id="pe-buy-price" name="pe-buy-price">
+            </div>
+        </div>
+
+
+
+        <div class="section">
+
+            <div>
+                <label for="ce-sell-price">CE Sell Price:</label>
+                <input type="text" id="ce-sell-price" name="ce-sell-price">
+            </div>
+
+            <div>
+                <label for="ce-buy-price">CE Buy Price:</label>
+                <input type="text" id="ce-buy-price" name="ce-buy-price">
+            </div>
+        </div>
+
+        <div class="section">
+
+            <div>
+                <label for="pe-sell-price">Lot Size:</label>
+                <input type="text" id="lot">
+            </div>
+
+            <div>
+                <label for="pe-sell-price">Lot Quantity:</label>
+                <input type="text" id="lotQty">
+            </div>
+        </div>
+        <div class="section">
+            <label for="pe-sell-price">Capital Required:</label>
+            <input type="text" id="Capital">
+        </div>
+
+
+
+
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <div id="result"></div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
